@@ -1,0 +1,32 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body, h1, h2, h3, h4, h5, h6, ul, ol, dl, li, dt, dd, p, div, span, img, a, table, tr, th, td, figure, figcaption {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  vertical-align: bottom;
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+li {
+  list-style: none;
+  list-style-position: inside;
+}
+
+header a, footer a {
+  text-decoration: none;
+}
+
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+}

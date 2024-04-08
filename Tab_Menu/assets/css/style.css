@@ -1,0 +1,45 @@
+/* INITIAL SETTING  */
+/* ------------------------------------------------------- */
+.ly_header {
+  margin-top: 32px;
+}
+
+main {
+  height: 200vh;
+  margin-top: 100px;
+}
+
+.bl_headerConts {
+  padding: 0 16px;
+  text-align: center;
+}
+
+.bl_headerConts_ttl {
+  color: #20284e;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bl_headerConts_nav {
+  margin-top: 32px;
+}
+
+.bl_headerConts_list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.bl_headerConts_link {
+  display: block;
+  width: 200px;
+  border-radius: 8px;
+  background-color: #f5be48;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  line-height: 56px;
+  text-transform: capitalize;
+}
+
+/* BLOCK CODING  */
+/* ------------------------------------------------------- */
