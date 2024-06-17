@@ -43,3 +43,97 @@ main {
 
 /* BLOCK CODING  */
 /* ------------------------------------------------------- */
+:root {
+  --color-white: #fefefe;
+  --color-neutral: #f7f8f8;
+  --color-smoke: #e0e0e0;
+  --color-gray: #434a56;
+}
+body {
+  font-family: "Helvetica Neue", "Segoe UI", "Hiragino Sans",
+    "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
+  line-height: 1.5;
+  color: var(--color-gray);
+  background-color: var(--color-neutral);
+}
+
+:focus:not(:focus-visible) {
+  outline: 0;
+}
+
+.tab-contents {
+  --font-size: clamp(0.875rem, 0.821rem + 0.24vi, 1rem);
+  --spacing: clamp(1.25rem, 0.714rem + 2.38vw, 2.5rem);
+
+  max-inline-size: 1200px;
+  padding: var(--spacing);
+  margin-inline: auto;
+  font-size: var(--font-size);
+  background-color: var(--color-white);
+}
+
+.tablist {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4px;
+  padding: 0;
+  list-style: none;
+}
+
+.tab {
+  display: grid;
+  place-items: center;
+  padding: 1em;
+  color: var(--color-gray);
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  border: 2px solid var(--color-smoke);
+  text-decoration: unset;
+  transition-duration: 0.3s;
+  transition-property: background-color, border-color;
+
+  &[aria-selected="true"] {
+    color: var(--color-white);
+    background-color: var(--color-gray);
+    border-color: var(--color-gray);
+  }
+
+  &:focus-visible {
+    background-color: var(--color-smoke);
+  }
+
+  @media (any-hover: hover) {
+    &:not([aria-selected="true"]):hover {
+      background-color: var(--color-smoke);
+    }
+  }
+}
+
+.tabpanel-wrapper {
+  margin-block-start: var(--spacing);
+}
+
+.tabpanel:target {
+  display: revert;
+}
+
+.tabpanel > * + * {
+  margin-block-start: var(--spacing);
+}
+
+.images {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(var(--spacing) / 2);
+}
+
+.images img {
+  inline-size: 100%;
+  block-size: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+p {
+  text-align: center;
+}

@@ -9,6 +9,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&amp;family=Noto+Sans+JP:wght@400;700&amp;display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/main.js" defer></script>
 </head>
 <body>
     <header class="ly_header">
@@ -19,6 +20,61 @@
   </header>
   <!-- /.ly_header -->
 
-  <main></main>
+  <main>
+    <div id="js-tabs" class="tab-contents">
+      <ul class="tablist" role="tablist">
+        <li role="presentation">
+          <a id="tab1" class="tab" href="#tabpanel1" role="tab" aria-controls="tabpanel1">Tab1</a>
+        </li>
+        <li role="presentation">
+          <a id="tab2" class="tab" href="#tabpanel2" role="tab" aria-controls="tabpanel2">Tab2</a>
+        </li>
+        <li role="presentation">
+          <a id="tab3" class="tab" href="#tabpanel3" role="tab" tabindex="0" aria-controls="tabpanel3">Tab3</a>
+        </li>
+      </ul>
+      <div class="tabpanel-wrapper">
+        <div id="tabpanel1" class="tabpanel" role="tabpanel" aria-labelledby="tab1" tabindex="0">
+          <p>タブコンテンツで検索</p>
+          <div class="images">
+            <img src="https://picsum.photos/800/450?random=1" alt="" width="800" height="450" decoding="async" fetchpriority="high" />
+            <img src="https://picsum.photos/800/450?random=2" alt="" width="800" height="450" decoding="async" fetchpriority="high" />
+            <img src="https://picsum.photos/800/450?random=3" alt="" width="800" height="450" decoding="async" fetchpriority="high" />
+            <img src="https://picsum.photos/800/450?random=4" alt="" width="800" height="450" decoding="async" fetchpriority="high" />
+            <img src="https://picsum.photos/800/450?random=5" alt="" width="800" height="450" decoding="async" fetchpriority="high" />
+            <img src="https://picsum.photos/800/450?random=6" alt="" width="800" height="450" decoding="async" fetchpriority="high" />
+            <img src="https://picsum.photos/800/450?random=7" alt="" width="800" height="450" decoding="async" fetchpriority="high" />
+            <img src="https://picsum.photos/800/450?random=8" alt="" width="800" height="450" decoding="async" fetchpriority="high" />
+          </div>
+        </div>
+        <div id="tabpanel2" class="tabpanel" role="tabpanel" hidden="until-found" aria-labelledby="tab2" tabindex="0">
+          <p>タブコンテンツで検索</p>
+          <div class="images">
+            <img src="https://picsum.photos/800/450?random=9" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+            <img src="https://picsum.photos/800/450?random=10" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+            <img src="https://picsum.photos/800/450?random=11" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+            <img src="https://picsum.photos/800/450?random=12" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+            <img src="https://picsum.photos/800/450?random=13" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+            <img src="https://picsum.photos/800/450?random=14" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+            <img src="https://picsum.photos/800/450?random=15" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+            <img src="https://picsum.photos/800/450?random=16" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+          </div>
+        </div>
+        <div id="tabpanel3" class="tabpanel" role="tabpanel" hidden="until-found" aria-labelledby="tab3" tabindex="0">
+          <p>タブコンテンツで検索</p>
+          <div class="images">
+            <img src="https://picsum.photos/800/450?random=17" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+            <img src="https://picsum.photos/800/450?random=18" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+            <img src="https://picsum.photos/800/450?random=19" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+            <img src="https://picsum.photos/800/450?random=20" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+            <img src="https://picsum.photos/800/450?random=21" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+            <img src="https://picsum.photos/800/450?random=22" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+            <img src="https://picsum.photos/800/450?random=23" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+            <img src="https://picsum.photos/800/450?random=24" alt="" width="800" height="450" decoding="async" loading="lazy" fetchpriority="low" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
 </body>
 </html>
