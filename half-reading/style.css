@@ -1,0 +1,17 @@
+:root{
+  --leading-trim: ;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+.wrapper{
+  padding-block: 80px;
+  background-color: bisque;
+}
+.text{
+  font-size: 40px;
+  line-height: 3;
+  background-color:cadetblue;
+  margin-block: calc((1em - 1lh) / 2);
+}
