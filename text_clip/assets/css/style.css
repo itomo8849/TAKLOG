@@ -10,7 +10,7 @@
 }
 header{
   --_text-safe-area: 10cqi;
-  --_padding: max(7.5svmin,32px);
+  --_padding: max(7.5vmin,32px);
 
   container: main-visual / inline-size;
   display: block grid;
