@@ -1,0 +1,50 @@
+:root{
+  --color-gray-100:  #f7f8f8;
+  --color-gray-200:  #e2e2e2;
+  --color-gray-300:  #676f79;
+  --color-gray-400:  #434a56;
+}
+*,*::after,*::before{
+  margin: 0;
+  padding: 0;
+}
+header{
+  --_text-safe-area: 10cqi;
+  --_padding: max(7.5svmin,32px);
+
+  container: main-visual / inline-size;
+  display: block grid;
+  grid-template-columns: var(--_padding) [text-start] var(--_text-safe-area) [image-start] 1fr [image-end text-end];
+  block-size: max(100svb,480px);
+  padding-block: var(--_padding);
+}
+header::after{
+  content: "";
+  grid-column: image;
+  grid-row: 1;
+  background-image: linear-gradient(rgb(0 0 0 / 10%),rgb(0 0 0));
+}
+
+header > *{
+  grid-row: 1;
+}
+h1{
+  z-index: 1;
+  grid-column: text;
+  align-self: center;
+  background-image: linear-gradient(
+    90deg,
+    var(--color-gray-400) 0% var(--_text-safe-area),
+    var(--color-gray-100) var(--_text-safe-area) 100%
+  );
+  background-clip: text;
+  color: transparent;
+  font-size: clamp(1.25rem,.071rem + 5.24cqi,4rem);
+}
+img{
+  grid-column: image;
+  inline-size: 100%;
+  block-size: 0;
+  min-block-size: 100%;
+  object-fit: cover;
+}
